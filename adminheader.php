@@ -84,7 +84,7 @@
         <div class="logo">
             <img src="path-to-your-logo.png" alt="Captured Moments Logo" height="50">
             <div class="head-nav">
-                <a href="portfolio.php"><h1>Captured Moments</h1></a>
+                <a href="admin_panel.php"><h1>Captured Moments</h1></a>
                 <p>Admin Dashboard</p>
             </div>
         </div>
