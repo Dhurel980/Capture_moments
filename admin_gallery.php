@@ -140,7 +140,7 @@ $gallery_items = $conn->query("SELECT * FROM gallery");
     </style>
 </head>
 <body>
-<?php include 'header.php'; ?>
+<?php include 'adminheader.php'; ?>
 <div class="container">
     <h1>Admin Gallery Management</h1>
     
