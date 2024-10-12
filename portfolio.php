@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Captured Moments Portfolio</title>
+    <meta name="description" content="Explore the Captured Moments photography portfolio, showcasing various categories like Wildlife, Landscape, and more by professional photographers.">
+    <meta name="keywords" content="portfolio, team members, experiences & skills, about us, contact">
+    <meta name="robots" content="index, follow">
+    <title>Portfolio - Captured Moments</title>
     <style>
         /* General Styles */
         body {
@@ -70,21 +73,25 @@
         }
 
         .team-grid {
-            margin: 40px;
+            margin: 0 auto;
             display: grid;
-            grid-template-columns: auto auto auto;
-            /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
-            /* gap: 10px;            */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px; /* Limit the maximum width for large screens */
+            padding: 0 20px;
         }
 
         .team-member {
             background-color: #fff;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 12px;
-            margin: 10px;
-            
+            transition: transform 0.3s ease; /* Added transition for hover effects */
+        }
+
+        .team-member:hover {
+            transform: scale(1.05); /* Slight zoom on hover for interactivity */
         }
 
         .team-member img {
@@ -106,6 +113,57 @@
             color: #666;
             line-height: 1.6;
         }
+
+        .team-member a {
+            font-size: 1.2em;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Responsive Design Adjustments */
+        @media (max-width: 768px) {
+            .team-section h2 {
+                font-size: 2em;
+            }
+
+            .team-member img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .team-member h3 {
+                font-size: 1.3em;
+            }
+
+            .team-member p {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-section h2 {
+                font-size: 1.8em;
+            }
+
+            .team-member img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .team-member h3 {
+                font-size: 1.2em;
+            }
+
+            .team-member p {
+                font-size: 0.9em;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
 
         /* experiences*/
         .experience-section {
@@ -214,7 +272,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 50%;
+            /* border-radius: 50%; */
         }
 
         .award-description {
@@ -292,12 +350,13 @@
             <div class="team-member">
                 <img src="uploads/rohitdai.jpg" alt="Rohit Reshmi Magar - Football Photographer expert">
                 <h3>Rohit Reshmi Magar</h3>
-                <p>Rohit is an expert who has a keen eye for capturing the essence of his subjects. He specializes in creative studio and outdoor photography mainly in Football. He is actively contrubute in capturingthe football moment.</p>
+                <p>Rohit is an expert who has a keen eye for capturing the essence of his subjects. He specializes in creative studio and outdoor photography mainly in Football. He actively contributes in capturing football moments.</p>
             </div>
+            
             <div class="team-member">
                 <img src="uploads/hemdai.jpg" alt="Hem kaucha - Cultural Specialist">
                 <h3>Hem kaucha</h3>
-                <p>Hem's love for his cultural has taken him across the Nepal, capturing beautiful cultural nepal have to offer. His work has been featured in numerous goverment and non-goverment magazines and papers.</p>
+                <p>Hem's love for his culture has taken him across Nepal, capturing the beauty of cultural traditions. His work has been featured in numerous government and non-government magazines and papers.</p>
             </div>
             
             <div class="team-member">
@@ -305,6 +364,7 @@
             </div>
         </div>
     </div>
+
     
     <!-- Experience Section -->
     <div class="experience-section">
@@ -330,7 +390,7 @@
                 <li>Fine art landscape photography for exhibitions and sales.</li>
                 <li>Collaborations with travel agencies and tourism boards.</li>
             </ul>
-        </div>6
+        </div>
 
         <div class="experience-item">
             <a href="experience.php">more....</a>
